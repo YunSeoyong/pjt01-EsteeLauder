@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* 메인-top */
+#main_top{
+    margin-top: 230px;
+    margin-bottom: 120px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #ecd9d9;
+}
+.mt_in{
+    position: relative;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page_title{
+    font-family: 'Optima';
+    font-size: 40px;
+    text-align: center;
+    line-height: 1em;
+}
+.page_select{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+.page_select p, .page_select i{
+    margin-left: 8px;
+}
+.page_select p a:hover{
+    color: #857e7e;
+    text-decoration: underline;
+}
+.page_select i{
+    display: inline-block;
+    width: 6px;
+    height: 11px;
+    background-image: url(../img/spr_icon.png);
+    background-position: -275px 0;
+    text-indent: -9999px;
+}
+.page_select .select_bestseller{
+    font-weight: 500;
+}
+/* 메인-bottom */
+#main_bottom{
+    margin-bottom: 240px;
+}
+.mb_in{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mb_top{
+    position: relative;
+    margin-bottom: 24px;
+}
+.mb_top a{
+    display: block;
+    height: 530px;
+    color: #fff;
+    background-image: url(../img/brandstory1.jpg);
+    transition: 0.2s;
+}
+.mb_top a:hover{
+    color: rgba(255, 255, 255, 0.8);
+    background-image: url(../img/brandstory1_hover.jpg);  
+}
+.box_text{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    padding-right: 40px;
+}
+.mb_top .box_text, .box_tr .box_text, .box_ig .box_text, .box_ovg .box_text{
+    transform: translateX(-70px);
+    opacity: 0;
+    transition: 1.1s;
+}
+.md_right .box_text, .box_lb .box_text{
+    transform: translateX(70px);
+    opacity: 0;
+    transition: 1.1s;
+}
+.box_text.visiOn{
+    transform: translateX(0px);
+    transform: translateY(0px);
+    opacity: 1;
+}
+.mb_title{
+    margin-bottom: 20px;
+    font-family: 'Optima';
+    font-size: 42px;
+    line-height: 1em;
+}
+.mb_txt{
+    font-size: 24px;
+    line-height: 1.8em;
+}
+.mb_md{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.md_left{
+    width: 708px;
+}
+.box_tr{
+    position: relative;
+    margin-bottom: 24px;
+}
+.box_tr a{
+    display: block;
+    height: 510px;
+    color: #fff;
+    background-image: url(../img/brandstory2.jpg);
+    transition: 0.2s;
+}
+.box_tr a:hover{
+    background-image: url(../img/brandstory2_hover.jpg);
+}
+.box_ig{
+    position: relative;
+}
+.box_ig a{
+    display: block;
+    height: 510px;
+    background-image: url(../img/brandstory3.jpg);
+    transition: 0.2s;
+}
+.box_ig a:hover{
+    color: #77583b;
+    background-image: url(../img/brandstory3_hover.jpg);
+}
+.md_right{
+    position: relative;
+    width: 708px;
+}
+.md_right a{
+    display: block;
+    height: 1044px;
+    background-image: url(../img/brandstory4.jpg);
+    transition: 0.2s;
+}
+.md_right a:hover{
+    color: #77583b;
+    background-image: url(../img/brandstory4_hover.jpg);   
+}
+.md_right .box_text{
+    top: 450px;
+    left: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+}
+.mb_bt{
+    display: flex;
+    justify-content: space-between;
+}
+.box_ovg{
+    position: relative;
+    width: 952px;
+}
+.box_ovg a{
+    display: block;
+    height: 370px;
+    color: #fff;
+    background-image: url(../img/brandstory5.jpg);
+    transition: 0.2s;
+}
+.box_ovg a:hover{
+    background-image: url(../img/brandstory5_hover.jpg);
+}
+.box_lb{
+    position: relative;
+    width: 464px;
+}
+.box_lb a{
+    display: block;
+    height: 370px;
+    background-image: url(../img/brandstory6.jpg);
+    transition: 0.2s;
+}
+.box_lb a:hover{
+    background-image: url(../img/brandstory6_hover.jpg);
+}

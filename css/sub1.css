@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* 메인배너 */
+#mainBn{
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 120px;
+    overflow: hidden;
+}
+.mBn_photo{
+    overflow: hidden;
+}
+.mBn_photo a{
+    display: block;
+    width: 1440px;
+    margin: 0 auto;
+}
+.mBn_photo a img{
+    margin-left: -240px;
+}
+.mBn_arrow > p{
+    position: absolute;
+    top: 40%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-indent: -99999px;
+    background-image: url(../img/spr_icon.png);
+    opacity: 0.6;
+}
+.mBn_prev{
+    left: 50%;
+    margin-left: -850px;
+    background-position: -288px -10px;
+}
+.mBn_next{
+    right: 50%;
+    margin-right: -850px;
+    background-position: -349px -10px;
+}
+.mBn_slider{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -700px;
+    display: flex;
+    align-items: center;
+}
+.mBn_pager{
+    margin-right: 15px;
+}
+.mBn_pager .slick-dots{
+    display: flex;
+    justify-content: center;
+    height: 4px;
+}
+.mBn_pager .slick-dots li{
+    margin-right: 3px;
+}
+.mBn_pager .slick-dots li button{
+    width: 100px;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+    text-indent: -99999px;
+}
+.mBn_pager .slick-dots .slick-active button{
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+.mBn_slider > p{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    text-indent: -99999px;
+    cursor: pointer;
+}
+.mBn_play{
+    display: none;
+}
+.mBn_play::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 3px;
+    width: 0;
+    height: 0;
+    border-left: 16px solid rgba(0, 0, 0, 0.5);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.mBn_stop::before, .mBn_stop::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 3px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.mBn_stop::before{
+    left: 3px;
+}
+.mBn_stop::after{
+    right: 3px;
+}
+/* 페이지제목 */
+#pagetop{
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ecd9d9;
+}
+.pgtop_in{
+    position: relative;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page_title{
+    margin-bottom: 70px;
+    font-family: 'Optima';
+    font-size: 40px;
+    text-align: center;
+    line-height: 1em;
+}
+.page_cate{
+    width: 464px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page_cate ul{
+    display: flex;
+    justify-content: space-between;
+}
+.page_cate li a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #857e7e;
+}
+.page_cate li a:hover{
+    color: #2a2727;
+}
+.page_cate .choice a{
+    color: #2a2727;
+    font-weight: 600;
+}
+.page_select{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+.page_select p, .page_select i{
+    margin-left: 8px;
+}
+.page_select p a:hover{
+    color: #857e7e;
+    text-decoration: underline;
+}
+.page_select i{
+    display: inline-block;
+    width: 6px;
+    height: 11px;
+    background-image: url(../img/spr_icon.png);
+    background-position: -275px 0;
+    text-indent: -9999px;
+}
+.page_select .select_bestseller{
+    font-weight: 500;
+}
+/* 베스트셀러-전체 리스트 */
+#all_bestseller{
+    margin-bottom: 100px;
+}
+.ab_in{
+    width: 1464px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ab_item ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.ab_item li{
+    width: 342px;
+    margin-right: 24px;
+    margin-bottom: 70px;
+}
+.item_photo{
+    width: 340px;
+    border: 1px solid #ecd9d9;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.item_photo img{
+    transition: 0.2s;
+    width: 340px;
+    height: 380px;
+    object-fit: cover;
+}
+.item_photo img:hover{
+    transform: scale(105%);
+}
+.item_text{
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.item_cate{
+    margin-bottom: 10px;
+}
+.item_cate a{
+    font-family: 'Optima';
+    font-size: 16px;
+    color: #615959;
+}
+.item_cate a:hover{
+    color: #857e7e;
+}
+.item_name{
+    height: 60px;
+    margin-bottom: 10px;
+}
+.item_name a{
+    font-size: 18px;
+    font-weight:600;
+    line-height: 1.3em;
+}
+.item_name a:hover{
+    color: #77583b;
+}
+.item_grade{
+    margin-bottom: 10px;
+}
+.item_grade a{
+    color: #756f6f;
+}
+.item_price{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.item_shade, .item_give{
+    color: #756f6f;
+    font-size: 13px;
+}
+.item_icon{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.item_icon i{
+    margin-left: 6px;
+}
+.item_icon i a{
+    display: inline-block;
+    width: 24px;
+    height: 20px;
+    background-image: url(../img/spr_icon.png);
+    text-indent: -9999px;
+}
+.ic_heart a{
+    background-position: -119px 0;
+}
+.ic_bag a{
+    background-position: -92px 0;
+}
+.ic_share a{
+    background-position: -145px 0;
+}
